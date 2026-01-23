@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albin Speijer – Portfolio</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #111;
+      line-height: 1.6;
+    }
+    header, section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+    }
+    header {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+    h1, h2, h3 {
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.8rem;
+    }
+    h3 {
+      margin-bottom: 0.3rem;
+    }
+    p {
+      max-width: 65ch;
+    }
+    .project {
+      background: #fff;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .contact-links {
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Albin Speijer</h1>
+    <p>
+      <strong>Engineering student at KTH pursuing a B.Sc. in Media Technology and an M.Sc. in Machine Learning.</strong>
+      I have a strong interest in machine learning and AI is something that has always fascinated me since learning about Google DeepMind in high school. The current AI boom both fascinates and terrifies me, but I have a strong theoretical interest and foundation in up-to-date research on Foundation Models.
+    </p>
+    <p>
+      This portfolio is an initial collection of a few projects that showcase a variety of problems and systems, reflecting on what I have done and learned.
+    </p>
+  </header>
+
+  <section>
+    <h2>Selected Projects</h2>
+
+    <div class="project">
+      <div class="meta">Web · Group Project (4 people)</div>
+      <h3>SoundGuessr — Audio-based GeoGuessr Alternative</h3>
+      <p><strong>Problem:</strong> Design a GeoGuessr-inspired game where players rely on sound as well as visuals to guess geographic locations.</p>
+      <p><strong>What I did:</strong> Worked primarily on the backend and core game logic. Implemented audio playback, round flow, and API logic in combination with Google Maps, achieving a robust architecture in accordance with industry best practices in React. Also contributed to user input handling and feedback mechanisms. Focused on keeping interactions fast and intuitive while coordinating closely with the team.</p>
+      <p><strong>Outcome:</strong> The final result was a fully playable web application where sound acts as the main information channel. The project demonstrated how audio-only cues can create engaging gameplay, while also highlighting challenges related to audio handling, timing, and user feedback in web environments.</p>
+      <p><strong>Link:</strong> <a href="https://soundguessr-4788a.web.app" target="_blank">soundguessr-4788a.web.app</a></p>
+    </div>
+
+    <div class="project">
+      <div class="meta">Machine Learning · Python (Scikit-learn, Pandas)</div>
+      <h3>Music Genre Classifier</h3>
+      <p><strong>Problem:</strong> Automatically classify music into genres based on audio features.</p>
+      <p><strong>What I did:</strong> Extracted features such as MFCCs, spectral centroid, and tempo from audio data. Trained and evaluated multiple ML models (including Random Forest and LDA) and compared their performance using accuracy and confusion matrices.</p>
+      <p><strong>Outcome:</strong> The project provided hands-on insight into feature engineering, model selection, and the limitations of genre classification due to overlapping musical characteristics. Best accuracy achieved was 67.4% across 6 different genres.</p>
+      <p>
+        <strong>Links:</strong>
+        <a href="ProjektrapportMachineLearning-1.pdf" target="_blank">Report (PDF)</a>
+        <a href="music_classifier_code.py" target="_blank">Source Code (.py)</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="meta">Sensor Programming · Course Project</div>
+      <h3>Interactive Ping Pong Sensor System</h3>
+      <p><strong>Problem:</strong> Explore how physical interaction and sensor data can be translated into meaningful feedback in an interactive system.</p>
+      <p><strong>What I did:</strong> Designed and implemented a two-node system using multiple sensors and actuators. One node generated physical events, while the second independently measured hits, force, and timing using pressure sensors and an accelerometer. Data was visualized and mapped to audio feedback.</p>
+      <p><strong>Outcome:</strong> The project highlighted challenges in sensor noise, real-time responsiveness, and meaningful data mapping. Iterative testing led to improved signal stability and clearer feedback for users. (My friend David in the demo)</p>
+      <p>
+        <strong>Links:</strong>
+        <a href="DM1588ProjectReport.pdf" target="_blank">Report (PDF)</a>
+      </p>
+      <img src="pingisrover.png" alt="Interactive Ping Pong Sensor System" style="max-width:100%; border-radius:6px;">
+    </div>
+
+  </section>
+
+  <section>
+    <h2>About & Contact</h2>
+    <p>
+      I am an engineering student at KTH Royal Institute of Technology, originally from Östersund, Sweden. I have had a strong interest in machine learning since a young age and hope to work with cutting-edge AI research in the future. I like building technical systems and my big passion lies in solving complex algorithmic challenges. I am driven by mathematical foundations, backend logic, and system architecture.
+    </p>
+    <p>
+      I enjoy tackling problems from a very foundational level—understanding how and why things work, both for us as humans, the world around us, and the technology we create. Seeing similarities and connections between these areas fascinates me, such as how LLMs compare to the human brain. I am always eager to learn new skills and technologies, and I thrive in collaborative environments where I can contribute to innovative projects.
+    </p>
+    
+    <p class="contact-links">
+      <a href="https://gits-15.sys.kth.se/speijer" target="_blank">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/albin-speijer-941745249/" target="_blank">LinkedIn</a> ·
+      <a href="mailto:albin.speijer@gmail.com">Email</a>
+    </p>
+  </section>
+
+  <footer>
+    © Albin Speijer – Portfolio MVP
+  </footer>
+
+</body>
+</html>
